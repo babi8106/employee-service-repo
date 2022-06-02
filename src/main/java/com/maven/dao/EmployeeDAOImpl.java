@@ -27,8 +27,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	}
 
 	public Optional<Employee> getEmployeeById(Integer empId) {
-		// TODO Auto-generated method stub
-		return null;
+		return Optional.of(employeeDB.get(empId));
 	}
 
 	public List<Employee> getEmployees() {
