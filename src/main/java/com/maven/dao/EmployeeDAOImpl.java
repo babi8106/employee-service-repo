@@ -10,7 +10,7 @@ import com.maven.dto.Employee;
 
 public class EmployeeDAOImpl implements EmployeeDAO {
 	
-	Map<Integer,Employee> employeeDB = new HashMap<Integer, Employee>();
+	Map<Integer,Employee> employeeDB = new HashMap<>();
 
 	public Optional<Employee> addEmployee(Employee employee) {
 		employeeDB.put(employee.getEmpId(), employee);
@@ -31,7 +31,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 	}
 
 	public List<Employee> getEmployees() {
-		return new ArrayList<Employee>(employeeDB.values());
+		return new ArrayList<>(employeeDB.values());
 	}
 
 }

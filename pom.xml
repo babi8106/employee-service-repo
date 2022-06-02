@@ -13,11 +13,11 @@
 	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.junit/junit5-engine -->
-		<!-- https://mvnrepository.com/artifact/org.scalatestplus/junit-4-12 -->
+		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
 		<dependency>
-			<groupId>org.scalatestplus</groupId>
-			<artifactId>junit-4-12_2.13</artifactId>
-			<version>3.3.0.0-SNAP2</version>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.9.0-M1</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -26,5 +26,14 @@
 
 	<build>
 		<finalName>employee-service</finalName>
+		 <pluginManagement>
+			<plugins>
+			  <plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.7.0.1746</version>
+			  </plugin>
+			</plugins>
+	    </pluginManagement>
 	</build>
 </project>
