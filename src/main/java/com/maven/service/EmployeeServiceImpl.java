@@ -19,12 +19,10 @@ public class EmployeeServiceImpl implements EmployeeService {
 	}
 
 	public Optional<Employee> getEmployeeById(Integer empId) {
-		// TODO Auto-generated method stub
-		return null;
+		return employeeDAOImpl.getEmployeeById(empId);
 	}
 
 	public List<Employee> getEmployees() {
-		// TODO Auto-generated method stub
 		return employeeDAOImpl.getEmployees();
 	}
 
